@@ -1,13 +1,40 @@
-title: OptimexEcuador
-description: Optica Optimex
+# Configuración del sitio
+title: "Optimex Ecuador - Catálogo de Productos"
+description: "Catálogo bilingüe de productos"
 url: "https://optimexecuador.com"
-theme: minima
+baseurl: ""
 
+# Idiomas soportados
+languages: ["es", "en"]
+default_language: es
+
+# Configuración de páginas por defecto
+defaults:
+  - scope:
+      path: "es"
+    values:
+      lang: es
+      layout: default
+  - scope:
+      path: "en"
+    values:
+      lang: en
+      layout: default
+
+# Plugins de Jekyll
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
 
-header_pages:
-  - about.md
-  - services.md
-  - contact.md
+# Configuración del tema
+theme: minima
+
+# Configuración adicional
+markdown: kramdown
+highlighter: rouge
+
+# Excluir archivos
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
