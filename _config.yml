@@ -1,0 +1,13 @@
+title: Nombre del Sitio
+description: Descripción del negocio
+url: "https://tudominio.com"
+theme: minima
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+header_pages:
+  - about.md
+  - services.md
+  - contact.md
